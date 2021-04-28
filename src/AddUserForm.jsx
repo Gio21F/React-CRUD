@@ -21,7 +21,7 @@ const AddUserForm = (props) => {
         type="text"
         name="name"
         ref={
-          register({
+          register('name', {
             required: { value:true, message:'Campo requerido'}
           })
         } />
@@ -29,9 +29,8 @@ const AddUserForm = (props) => {
       <label>Username</label>
       <input
         type="text"
-        name="username"
         ref={
-          register({
+          register('username' , {
             required: { value:true, message:'Campo requerido'}
           })
         } />
